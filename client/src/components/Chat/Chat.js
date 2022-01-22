@@ -9,7 +9,7 @@ import Input from '../Input/Input';
 
 import './Chat.css';
 
-const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
+const ENDPOINT = 'https://urvesh-chat-app.herokuapp.com/';
 
 let socket;
 
@@ -24,7 +24,7 @@ const Chat = ({ location }) => {
     const { name, room } = queryString.parse(location.search);
 
     socket = io(ENDPOINT);
-
+    console.log("99999")
     setRoom(room);
     setName(name)
 
